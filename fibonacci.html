@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fibonacci</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fibonacci.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/fibonacci.css">
+</head>
+<body>
+
+<div class="serie_Fibonacci">
+	<h1>SERIE DE FIBONACCI</h1>
+
+	<h2>Presiona los botones para ver el siguiente numero de la serie</h2>
+	<div class="frame">
+		<p>Posicion en la Secuencia</p>
+
+		<input type="button" href="#" onclick="lastFibonacci()" value="anterior"></input>
+		<input id="fib" type="text" onkeyup="validateFibonacci()" style="width: 50px;" value="0" ></input> 
+		<input type="button" href="#" onclick="nextFibonacci()" value="siguiente"></input>	
+	</div>
+
+	<div class="frame" style="display: block;">
+		<label><b>Valor en la Secuencia</b></label>
+		<input id="fib_seq" style="width: 100px;" value="0" onkeyup="restaurar();" ></input>
+	</div>
+	Ver Referencia en <a href="https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci">Wikipedia</a>
+
+
+</div>
+
+
+</body>
+</html>
