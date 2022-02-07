@@ -37,7 +37,7 @@ function lastFibonacci(){
 	var control = document.getElementById('fib');
 	var numero = parseInt(control.value)-1;
 	if (isNaN(numero)){
-		alert('No es un valor valido');
+		alert('Por favor, ingrese una entrada válida (entero no negativo).');
 		$("#fib_seq").val(" ");
 		return;
 	}
